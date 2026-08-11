@@ -231,6 +231,31 @@ img {
   box-shadow: 0 6px 20px rgba(37, 211, 102, 0.35);
 }
 
+.btn--github {
+  background: #24292e;
+  color: #fff;
+  box-shadow: 0 6px 20px rgba(36, 41, 46, 0.4);
+}
+
+.btn--linkedin {
+  background: #0a66c2;
+  color: #fff;
+  box-shadow: 0 6px 20px rgba(10, 102, 194, 0.35);
+}
+
+.btn--whatsapp:hover,
+.btn--github:hover,
+.btn--linkedin:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+.btn__icon {
+  width: 16px;
+  height: 16px;
+  vertical-align: -2px;
+  margin-right: 7px;
+}
+
 .btn--outline {
   border: 1px solid var(--border);
   color: var(--text);
