@@ -14,12 +14,18 @@
   <nav class="nav">
     <div class="container nav__container">
       <a class="nav__brand" href="#inicio">A<span>.</span>Castillo</a>
-      <button class="nav__toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+      <div class="nav__right">
+        <button class="lang-toggle" type="button" aria-label="Cambiar idioma / Switch language">
+          <span class="lang-toggle__option" data-lang="es">ES</span>
+          <span class="lang-toggle__option" data-lang="en">EN</span>
+        </button>
+        <button class="nav__toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+      </div>
       <ul class="nav__links">
         <li><a href="#skills">Skills</a></li>
-        <li><a href="#proyectos">Proyectos</a></li>
-        <li><a href="#experiencia">Experiencia</a></li>
-        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="#proyectos" data-i18n="nav.projects">Proyectos</a></li>
+        <li><a href="#experiencia" data-i18n="nav.experience">Experiencia</a></li>
+        <li><a href="#contacto" data-i18n="nav.contact">Contacto</a></li>
       </ul>
     </div>
   </nav>
@@ -28,9 +34,9 @@
   <header class="hero" id="inicio">
     <div class="container">
       <img class="hero__avatar" src="img/perfil.jpg" alt="Foto de Jason Alexander Castillo Rojas" width="170" height="170" />
-      <h1 class="hero__title">Hola, soy Jason Alexander<br />Castillo Rojas</h1>
+      <h1 class="hero__title" data-i18n="hero.title">Hola, soy Jason Alexander<br />Castillo Rojas</h1>
       <div class="hero__role">Backend Developer · C# / .NET</div>
-      <p class="hero__tagline">
+      <p class="hero__tagline" data-i18n="hero.tagline">
         Desarrollador backend enfocado en aplicaciones web escalables con C#, .NET y
         Entity Framework, apoyadas en bases de datos SQL. Con experiencia en contabilidad
         y finanzas que me permite entender procesos de negocio y traducirlos en
@@ -46,8 +52,8 @@
         <span class="chip">Docker</span>
       </div>
       <div class="hero__actions">
-        <a class="btn btn--primary" href="#proyectos">Ver proyectos</a>
-        <a class="btn btn--outline" href="#contacto">Contáctame</a>
+        <a class="btn btn--primary" href="#proyectos" data-i18n="hero.actions.projects">Ver proyectos</a>
+        <a class="btn btn--outline" href="#contacto" data-i18n="hero.actions.contact">Contáctame</a>
       </div>
     </div>
   </header>
@@ -56,7 +62,7 @@
   <section class="section" id="skills">
     <div class="container">
       <h2 class="section__title">Skills</h2>
-      <p class="section__sub">Tecnologías y herramientas que uso día a día.</p>
+      <p class="section__sub" data-i18n="skills.sub">Tecnologías y herramientas que uso día a día.</p>
       <div class="skills-grid">
         <div class="skill-card">
           <h3 class="skill-card__title">Backend</h3>
@@ -66,20 +72,20 @@
             <li>Entity Framework Core</li>
             <li>REST API design</li>
             <li>Clean Architecture</li>
-            <li>Docker (básico)</li>
+            <li data-i18n="skills.backend.i6">Docker (básico)</li>
           </ul>
         </div>
         <div class="skill-card">
-          <h3 class="skill-card__title">Datos</h3>
+          <h3 class="skill-card__title" data-i18n="skills.data.title">Datos</h3>
           <ul>
             <li>SQL Server</li>
-            <li>Consultas y migraciones EF</li>
-            <li>Modelado de datos</li>
-            <li>Transacciones</li>
+            <li data-i18n="skills.data.i1">Consultas y migraciones EF</li>
+            <li data-i18n="skills.data.i2">Modelado de datos</li>
+            <li data-i18n="skills.data.i3">Transacciones</li>
           </ul>
         </div>
         <div class="skill-card">
-          <h3 class="skill-card__title">Frontend (integración)</h3>
+          <h3 class="skill-card__title" data-i18n="skills.frontend.title">Frontend (integración)</h3>
           <ul>
             <li>React 18 + TypeScript</li>
             <li>Vite</li>
@@ -88,7 +94,7 @@
           </ul>
         </div>
         <div class="skill-card">
-          <h3 class="skill-card__title">Calidad y otras</h3>
+          <h3 class="skill-card__title" data-i18n="skills.quality.title">Calidad y otras</h3>
           <ul>
             <li>FluentValidation</li>
             <li>AutoMapper</li>
@@ -105,19 +111,19 @@
   <!-- ============ PROYECTOS ============ -->
   <section class="section" id="proyectos">
     <div class="container">
-      <h2 class="section__title">Proyectos</h2>
-      <p class="section__sub">Proyecto destacado: un sistema completo backend + frontend.</p>
+      <h2 class="section__title" data-i18n="projects.title">Proyectos</h2>
+      <p class="section__sub" data-i18n="projects.sub">Proyecto destacado: un sistema completo backend + frontend.</p>
 
       <article class="featured reveal">
         <div class="featured__header">
           <div>
-            <span class="featured__tag">Proyecto destacado · Full-stack</span>
+            <span class="featured__tag" data-i18n="featured.tag">Proyecto destacado · Full-stack</span>
             <h3 class="featured__title"><a href="https://github.com/Nobless393/DanzaBogota" target="_blank" rel="noopener">DanzaBogota</a></h3>
           </div>
           <a href="https://github.com/Nobless393/DanzaBogota" target="_blank" rel="noopener" class="btn btn--outline">GitHub</a>
         </div>
         <div class="featured__body">
-          <p>
+          <p data-i18n="featured.desc">
             Plataforma web para la gestión de eventos de danza cultural en Bogotá. Sistema
             completo con autenticación JWT, control de roles (Admin, Gestor y Grupo),
             inscripciones a eventos, gestión de grupos y participantes, comentarios,
@@ -140,8 +146,8 @@
           </div>
 
           <div class="featured__why">
-            <h4>¿Por qué este proyecto?</h4>
-            <p>
+            <h4 data-i18n="featured.why.title">¿Por qué este proyecto?</h4>
+            <p data-i18n="featured.why.body">
               Es mi proyecto de tesis en Ingeniería de Sistemas (UNAD). Nació del interés por
               dar visibilidad a los grupos de danza folclórica y cultural de Bogotá, que
               organizan y promocionan sus eventos de forma dispersa. Quería un sistema donde
@@ -156,32 +162,32 @@
             <div>
               <h4>Backend — .NET 8 Web API</h4>
               <ul>
-                <li>Arquitectura limpia en capas (Application, Domain, Infrastructure, Transversal)</li>
-                <li>Auth JWT con ASP.NET Core Identity y roles personalizados</li>
-                <li>EF Core con migraciones y seeding de datos de referencia</li>
-                <li>Validación con FluentValidation y filtro global de validación</li>
-                <li>Logging con Serilog y middleware global de excepciones</li>
-                <li>10+ controllers: Auth, Events, Groups, Participants, Inscriptions, Comments y más</li>
-                <li>Documentación con Swagger / OpenAPI</li>
+                <li data-i18n="featured.backend.i1">Arquitectura limpia en capas (Application, Domain, Infrastructure, Transversal)</li>
+                <li data-i18n="featured.backend.i2">Auth JWT con ASP.NET Core Identity y roles personalizados</li>
+                <li data-i18n="featured.backend.i3">EF Core con migraciones y seeding de datos de referencia</li>
+                <li data-i18n="featured.backend.i4">Validación con FluentValidation y filtro global de validación</li>
+                <li data-i18n="featured.backend.i5">Logging con Serilog y middleware global de excepciones</li>
+                <li data-i18n="featured.backend.i6">10+ controllers: Auth, Events, Groups, Participants, Inscriptions, Comments y más</li>
+                <li data-i18n="featured.backend.i7">Documentación con Swagger / OpenAPI</li>
               </ul>
             </div>
             <div>
               <h4>Frontend — React + TypeScript</h4>
               <ul>
-                <li>SPA con Vite, React Router v6 y Axios</li>
-                <li>Interceptor de JWT para peticiones autenticadas</li>
-                <li>Rutas protegidas por rol (Admin / Gestor / Grupo)</li>
-                <li>Vistas por rol: dashboard, CRUD de eventos, inscripciones, grupos, usuarios</li>
-                <li>Página pública de eventos con detalle e inscripción</li>
-                <li>Tipos TypeScript alineados con los DTOs del backend</li>
+                <li data-i18n="featured.frontend.i1">SPA con Vite, React Router v6 y Axios</li>
+                <li data-i18n="featured.frontend.i2">Interceptor de JWT para peticiones autenticadas</li>
+                <li data-i18n="featured.frontend.i3">Rutas protegidas por rol (Admin / Gestor / Grupo)</li>
+                <li data-i18n="featured.frontend.i4">Vistas por rol: dashboard, CRUD de eventos, inscripciones, grupos, usuarios</li>
+                <li data-i18n="featured.frontend.i5">Página pública de eventos con detalle e inscripción</li>
+                <li data-i18n="featured.frontend.i6">Tipos TypeScript alineados con los DTOs del backend</li>
               </ul>
             </div>
           </div>
 
           <ul class="featured__list">
-            <li>Proyecto de tesis — Ingeniería en Sistemas (UNAD)</li>
-            <li>Backend y frontend desplegables por separado, con proxy de desarrollo en Vite</li>
-            <li>Semilla con datos de prueba y credenciales de administrador</li>
+            <li data-i18n="featured.list.i1">Proyecto de tesis — Ingeniería en Sistemas (UNAD)</li>
+            <li data-i18n="featured.list.i2">Backend y frontend desplegables por separado, con proxy de desarrollo en Vite</li>
+            <li data-i18n="featured.list.i3">Semilla con datos de prueba y credenciales de administrador</li>
           </ul>
         </div>
       </article>
@@ -189,14 +195,14 @@
       <!-- Proyectos futuros (relleno) -->
       <div class="projects-grid">
         <div class="project-card reveal">
-          <h3 class="project-card__title">Próximo proyecto</h3>
-          <p class="project-card__desc">Aquí mostraré mi siguiente proyecto backend con .NET.</p>
-          <p class="project-card__note">En construcción — se agregará pronto.</p>
+          <h3 class="project-card__title" data-i18n="upcoming.title">Próximo proyecto</h3>
+          <p class="project-card__desc" data-i18n="upcoming.desc1">Aquí mostraré mi siguiente proyecto backend con .NET.</p>
+          <p class="project-card__note" data-i18n="upcoming.note">En construcción — se agregará pronto.</p>
         </div>
         <div class="project-card reveal">
-          <h3 class="project-card__title">Próximo proyecto</h3>
-          <p class="project-card__desc">Más ejemplos de APIs, microservicios o herramientas de automatización.</p>
-          <p class="project-card__note">En construcción — se agregará pronto.</p>
+          <h3 class="project-card__title" data-i18n="upcoming.title">Próximo proyecto</h3>
+          <p class="project-card__desc" data-i18n="upcoming.desc2">Más ejemplos de APIs, microservicios o herramientas de automatización.</p>
+          <p class="project-card__note" data-i18n="upcoming.note">En construcción — se agregará pronto.</p>
         </div>
       </div>
     </div>
@@ -205,13 +211,13 @@
   <!-- ============ EXPERIENCIA ============ -->
   <section class="section" id="experiencia">
     <div class="container">
-      <h2 class="section__title">Experiencia</h2>
-      <p class="section__sub">Trayectoria profesional como desarrollador y en áreas de negocio.</p>
+      <h2 class="section__title" data-i18n="experience.title">Experiencia</h2>
+      <p class="section__sub" data-i18n="experience.sub">Trayectoria profesional como desarrollador y en áreas de negocio.</p>
 
       <div class="exp-item">
-        <h3 class="exp-item__title">Desarrollador Junior — Finanzauto S.A.</h3>
-        <div class="exp-item__period">Oct 2024 · Dic 2025</div>
-        <p class="exp-item__desc">
+        <h3 class="exp-item__title" data-i18n="experience.finanzauto.title">Desarrollador Junior — Finanzauto S.A.</h3>
+        <div class="exp-item__period" data-i18n="experience.finanzauto.period">Oct 2024 · Dic 2025</div>
+        <p class="exp-item__desc" data-i18n="experience.finanzauto.desc">
           Desarrollo y mantenimiento de APIs REST con C#, .NET, Entity Framework y SQL Server.
           Creación de endpoints e integración con APIs externas. Resolución de bugs, QA y
           soporte técnico. Uso de Docker para entornos y despliegues.
@@ -219,27 +225,27 @@
       </div>
 
       <div class="exp-item">
-        <h3 class="exp-item__title">Desarrollador Junior — Sinco ERP</h3>
-        <div class="exp-item__period">Feb 2022 · Ene 2024</div>
-        <p class="exp-item__desc">
+        <h3 class="exp-item__title" data-i18n="experience.sinco.title">Desarrollador Junior — Sinco ERP</h3>
+        <div class="exp-item__period" data-i18n="experience.sinco.period">Feb 2022 · Ene 2024</div>
+        <p class="exp-item__desc" data-i18n="experience.sinco.desc">
           Desarrollo y mantenimiento de aplicaciones web con Entity Framework, SQL y C#.
           Construcción de arquitecturas robustas para aplicaciones web.
         </p>
       </div>
 
       <div class="exp-item">
-        <h3 class="exp-item__title">Operador I — IQ Outsourcing</h3>
-        <div class="exp-item__period">Jul 2017 · Dic 2021</div>
-        <p class="exp-item__desc">
+        <h3 class="exp-item__title" data-i18n="experience.iq.title">Operador I — IQ Outsourcing</h3>
+        <div class="exp-item__period" data-i18n="experience.iq.period">Jul 2017 · Dic 2021</div>
+        <p class="exp-item__desc" data-i18n="experience.iq.desc">
           Digitación y gestión de cuentas médicas, homologación, control de calidad según
           manuales tarifarios ISS y SOAT, análisis de glosas y apoyo administrativo.
         </p>
       </div>
 
       <div class="exp-item">
-        <h3 class="exp-item__title">Auxiliar Operativo — Carvajal S.A.</h3>
-        <div class="exp-item__period">Dic 2016 · Abr 2017</div>
-        <p class="exp-item__desc">
+        <h3 class="exp-item__title" data-i18n="experience.carvajal.title">Auxiliar Operativo — Carvajal S.A.</h3>
+        <div class="exp-item__period" data-i18n="experience.carvajal.period">Dic 2016 · Abr 2017</div>
+        <p class="exp-item__desc" data-i18n="experience.carvajal.desc">
           Digitación de cuentas médicas, indexación, homologación, control de calidad y
           manejo de la plataforma OnBase.
         </p>
@@ -251,14 +257,14 @@
   <section class="section" id="contacto">
     <div class="container">
       <div class="contact__box reveal">
-        <h2 class="section__title">Contacto</h2>
-        <p class="contact__intro">¿Tienes un proyecto en mente o buscas un desarrollador .NET? Hablemos.</p>
+        <h2 class="section__title" data-i18n="contact.title">Contacto</h2>
+        <p class="contact__intro" data-i18n="contact.intro">¿Tienes un proyecto en mente o buscas un desarrollador .NET? Hablemos.</p>
         <div class="contact__actions">
           <a class="btn btn--primary" href="mailto:Alexc312@hotmail.com">
             <svg class="btn__icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
-            Escríbeme
+            <span data-i18n="contact.email">Escríbeme</span>
           </a>
-          <a class="btn btn--whatsapp" href="https://wa.me/573227869726?text=Hola%20Alexander%2C%20vi%20tu%20portafolio%20y%20quiero%20hablar%20contigo" target="_blank" rel="noopener">
+          <a class="btn btn--whatsapp" href="https://wa.me/573227869726?text=Hola%20Alexander%2C%20vi%20tu%20portafolio%20y%20quiero%20hablar%20contigo" data-i18n-href="contact.wa.href" target="_blank" rel="noopener">
             <svg class="btn__icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.297-.497.1-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
             WhatsApp
           </a>
@@ -273,7 +279,7 @@
         </div>
         <div class="contact__badges">
           <span class="chip">Colombia · España</span>
-          <span class="chip">Español · Nativo</span>
+          <span class="chip" data-i18n="contact.badge.i2">Español · Nativo</span>
           <span class="chip">English · B2</span>
         </div>
       </div>
@@ -283,10 +289,11 @@
   <!-- ============ FOOTER ============ -->
   <footer class="footer">
     <div class="container">
-      <p>© <span data-year>2026</span> Jason Alexander Castillo Rojas · Desarrollador Backend .NET</p>
+      <p>© <span data-year>2026</span> Jason Alexander Castillo Rojas · <span data-i18n="footer.role">Desarrollador Backend .NET</span></p>
     </div>
   </footer>
 
+  <script src="js/i18n.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
