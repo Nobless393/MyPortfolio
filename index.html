@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portafolio de Jason Alexander Castillo Rojas — Desarrollador Backend .NET y C#" />
+  <title>Jason Alexander Castillo Rojas · Backend Developer (.NET)</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚙</text></svg>" />
+</head>
+<body>
+
+  <!-- ============ NAVBAR ============ -->
+  <nav class="nav">
+    <div class="container nav__container">
+      <a class="nav__brand" href="#inicio">A<span>.</span>Castillo</a>
+      <button class="nav__toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+      <ul class="nav__links">
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#experiencia">Experiencia</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ============ HERO ============ -->
+  <header class="hero" id="inicio">
+    <div class="container">
+      <img class="hero__avatar" src="img/perfil.jpg" alt="Foto de Jason Alexander Castillo Rojas" width="170" height="170" />
+      <h1 class="hero__title">Hola, soy Jason Alexander<br />Castillo Rojas</h1>
+      <div class="hero__role">Backend Developer · C# / .NET</div>
+      <p class="hero__tagline">
+        Desarrollador backend enfocado en aplicaciones web escalables con C#, .NET y
+        Entity Framework, apoyadas en bases de datos SQL. Con experiencia en contabilidad
+        y finanzas que me permite entender procesos de negocio y traducirlos en
+        soluciones tecnológicas eficientes.
+      </p>
+      <div class="hero__badges">
+        <span class="chip">C#</span>
+        <span class="chip">.NET 8</span>
+        <span class="chip">ASP.NET Core Web API</span>
+        <span class="chip">Entity Framework Core</span>
+        <span class="chip">SQL Server</span>
+        <span class="chip">React + TypeScript</span>
+        <span class="chip">Docker</span>
+      </div>
+      <div class="hero__actions">
+        <a class="btn btn--primary" href="#proyectos">Ver proyectos</a>
+        <a class="btn btn--outline" href="#contacto">Contáctame</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ SKILLS ============ -->
+  <section class="section" id="skills">
+    <div class="container">
+      <h2 class="section__title">Skills</h2>
+      <p class="section__sub">Tecnologías y herramientas que uso día a día.</p>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3 class="skill-card__title">Backend</h3>
+          <ul>
+            <li>C# / .NET 8</li>
+            <li>ASP.NET Core Web API</li>
+            <li>Entity Framework Core</li>
+            <li>REST API design</li>
+            <li>Clean Architecture</li>
+            <li>Docker (básico)</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h3 class="skill-card__title">Datos</h3>
+          <ul>
+            <li>SQL Server</li>
+            <li>Consultas y migraciones EF</li>
+            <li>Modelado de datos</li>
+            <li>Transacciones</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h3 class="skill-card__title">Frontend (integración)</h3>
+          <ul>
+            <li>React 18 + TypeScript</li>
+            <li>Vite</li>
+            <li>React Router</li>
+            <li>Axios / JWT auth</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h3 class="skill-card__title">Calidad y otras</h3>
+          <ul>
+            <li>FluentValidation</li>
+            <li>AutoMapper</li>
+            <li>Serilog (logging)</li>
+            <li>Swagger / OpenAPI</li>
+            <li>Tests (xUnit)</li>
+            <li>Git / GitHub</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROYECTOS ============ -->
+  <section class="section" id="proyectos">
+    <div class="container">
+      <h2 class="section__title">Proyectos</h2>
+      <p class="section__sub">Proyecto destacado: un sistema completo backend + frontend.</p>
+
+      <article class="featured reveal">
+        <div class="featured__header">
+          <div>
+            <span class="featured__tag">Proyecto destacado · Full-stack</span>
+            <h3 class="featured__title"><a href="https://github.com/Nobless393/DanzaBogota" target="_blank" rel="noopener">DanzaBogota</a></h3>
+          </div>
+          <a href="https://github.com/Nobless393/DanzaBogota" target="_blank" rel="noopener" class="btn btn--outline">GitHub</a>
+        </div>
+        <div class="featured__body">
+          <p>
+            Plataforma web para la gestión de eventos de danza cultural en Bogotá. Sistema
+            completo con autenticación JWT, control de roles (Admin, Gestor y Grupo),
+            inscripciones a eventos, gestión de grupos y participantes, comentarios,
+            categorías y localidades. Backend construido con arquitectura limpia en capas.
+          </p>
+
+          <div class="featured__tech">
+            <span class="chip">C#</span>
+            <span class="chip">.NET 8</span>
+            <span class="chip">EF Core</span>
+            <span class="chip">SQL Server</span>
+            <span class="chip">JWT + Identity</span>
+            <span class="chip">Serilog</span>
+            <span class="chip">FluentValidation</span>
+            <span class="chip">Swagger</span>
+            <span class="chip">React 18</span>
+            <span class="chip">TypeScript</span>
+            <span class="chip">Vite</span>
+            <span class="chip">Axios</span>
+          </div>
+
+          <div class="featured__why">
+            <h4>¿Por qué este proyecto?</h4>
+            <p>
+              Es mi proyecto de tesis en Ingeniería de Sistemas (UNAD). Nació del interés por
+              dar visibilidad a los grupos de danza folclórica y cultural de Bogotá, que
+              organizan y promocionan sus eventos de forma dispersa. Quería un sistema donde
+              un administrador publique eventos, los grupos se inscriban y los gestores
+              administren participantes e inscripciones, todo con roles y seguridad reales.
+              No es solo un ejercicio académico: es una plataforma que resuelve un problema
+              concreto de mi ciudad.
+            </p>
+          </div>
+
+          <div class="featured__split">
+            <div>
+              <h4>Backend — .NET 8 Web API</h4>
+              <ul>
+                <li>Arquitectura limpia en capas (Application, Domain, Infrastructure, Transversal)</li>
+                <li>Auth JWT con ASP.NET Core Identity y roles personalizados</li>
+                <li>EF Core con migraciones y seeding de datos de referencia</li>
+                <li>Validación con FluentValidation y filtro global de validación</li>
+                <li>Logging con Serilog y middleware global de excepciones</li>
+                <li>10+ controllers: Auth, Events, Groups, Participants, Inscriptions, Comments y más</li>
+                <li>Documentación con Swagger / OpenAPI</li>
+              </ul>
+            </div>
+            <div>
+              <h4>Frontend — React + TypeScript</h4>
+              <ul>
+                <li>SPA con Vite, React Router v6 y Axios</li>
+                <li>Interceptor de JWT para peticiones autenticadas</li>
+                <li>Rutas protegidas por rol (Admin / Gestor / Grupo)</li>
+                <li>Vistas por rol: dashboard, CRUD de eventos, inscripciones, grupos, usuarios</li>
+                <li>Página pública de eventos con detalle e inscripción</li>
+                <li>Tipos TypeScript alineados con los DTOs del backend</li>
+              </ul>
+            </div>
+          </div>
+
+          <ul class="featured__list">
+            <li>Proyecto de tesis — Ingeniería en Sistemas (UNAD)</li>
+            <li>Backend y frontend desplegables por separado, con proxy de desarrollo en Vite</li>
+            <li>Semilla con datos de prueba y credenciales de administrador</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- Proyectos futuros (relleno) -->
+      <div class="projects-grid">
+        <div class="project-card reveal">
+          <h3 class="project-card__title">Próximo proyecto</h3>
+          <p class="project-card__desc">Aquí mostraré mi siguiente proyecto backend con .NET.</p>
+          <p class="project-card__note">En construcción — se agregará pronto.</p>
+        </div>
+        <div class="project-card reveal">
+          <h3 class="project-card__title">Próximo proyecto</h3>
+          <p class="project-card__desc">Más ejemplos de APIs, microservicios o herramientas de automatización.</p>
+          <p class="project-card__note">En construcción — se agregará pronto.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EXPERIENCIA ============ -->
+  <section class="section" id="experiencia">
+    <div class="container">
+      <h2 class="section__title">Experiencia</h2>
+      <p class="section__sub">Trayectoria profesional como desarrollador y en áreas de negocio.</p>
+
+      <div class="exp-item">
+        <h3 class="exp-item__title">Desarrollador Junior — Finanzauto S.A.</h3>
+        <div class="exp-item__period">Oct 2024 · Dic 2025</div>
+        <p class="exp-item__desc">
+          Desarrollo y mantenimiento de APIs REST con C#, .NET, Entity Framework y SQL Server.
+          Creación de endpoints e integración con APIs externas. Resolución de bugs, QA y
+          soporte técnico. Uso de Docker para entornos y despliegues.
+        </p>
+      </div>
+
+      <div class="exp-item">
+        <h3 class="exp-item__title">Desarrollador Junior — Sinco ERP</h3>
+        <div class="exp-item__period">Feb 2022 · Ene 2024</div>
+        <p class="exp-item__desc">
+          Desarrollo y mantenimiento de aplicaciones web con Entity Framework, SQL y C#.
+          Construcción de arquitecturas robustas para aplicaciones web.
+        </p>
+      </div>
+
+      <div class="exp-item">
+        <h3 class="exp-item__title">Operador I — IQ Outsourcing</h3>
+        <div class="exp-item__period">Jul 2017 · Dic 2021</div>
+        <p class="exp-item__desc">
+          Digitación y gestión de cuentas médicas, homologación, control de calidad según
+          manuales tarifarios ISS y SOAT, análisis de glosas y apoyo administrativo.
+        </p>
+      </div>
+
+      <div class="exp-item">
+        <h3 class="exp-item__title">Auxiliar Operativo — Carvajal S.A.</h3>
+        <div class="exp-item__period">Dic 2016 · Abr 2017</div>
+        <p class="exp-item__desc">
+          Digitación de cuentas médicas, indexación, homologación, control de calidad y
+          manejo de la plataforma OnBase.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACTO ============ -->
+  <section class="section" id="contacto">
+    <div class="container">
+      <div class="contact__box reveal">
+        <h2 class="section__title">Contacto</h2>
+        <p class="contact__intro">¿Tienes un proyecto en mente o buscas un desarrollador .NET? Hablemos.</p>
+        <div class="contact__actions">
+          <a class="btn btn--primary" href="mailto:Alexc312@hotmail.com">Escríbeme</a>
+          <a class="btn btn--outline" href="https://github.com/Nobless393" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn btn--outline" href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+        <div class="contact__badges">
+          <span class="chip">Colombia · España</span>
+          <span class="chip">Español · Nativo</span>
+          <span class="chip">English · B2</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container">
+      <p>© <span data-year>2026</span> Jason Alexander Castillo Rojas · Desarrollador Backend .NET</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
