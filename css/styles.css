@@ -225,6 +225,12 @@ img {
   box-shadow: 0 6px 20px rgba(88, 166, 255, 0.35);
 }
 
+.btn--whatsapp {
+  background: #25d366;
+  color: #fff;
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.35);
+}
+
 .btn--outline {
   border: 1px solid var(--border);
   color: var(--text);
